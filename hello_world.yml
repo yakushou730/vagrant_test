@@ -1,0 +1,10 @@
+---
+- name: get hostname
+  hosts: all
+  tasks:
+    - name: get server host name
+      command: hostname
+      register: result
+    - name: print stdout
+      debug:
+        msg: "{{ result.stdout }}"
