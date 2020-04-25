@@ -1,0 +1,14 @@
+lb01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222 ansible_ssh_pass=vagrant
+app01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ansible_ssh_pass=vagrant
+app02 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201 ansible_ssh_pass=vagrant
+db01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2202 ansible_ssh_pass=vagrant
+
+[app]
+app01
+app02
+
+[db]
+db01
+
+[lb]
+lb01
