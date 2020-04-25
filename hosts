@@ -1,7 +1,10 @@
-lb01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222 ansible_ssh_pass=vagrant
-app01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ansible_ssh_pass=vagrant
-app02 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201 ansible_ssh_pass=vagrant
-db01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2202 ansible_ssh_pass=vagrant
+lb01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222 ansible_ssh_private_key_file=.vagrant/machines/lb01/virtualbox/private_key
+app01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200 ansible_ssh_private_key_file=.vagrant/machines/app01/virtualbox/private_key
+app02 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201 ansible_ssh_private_key_file=.vagrant/machines/app02/virtualbox/private_key
+db01 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2202 ansible_ssh_private_key_file=.vagrant/machines/db01/virtualbox/private_key
+
+[lb]
+lb01
 
 [app]
 app01
@@ -9,6 +12,3 @@ app02
 
 [db]
 db01
-
-[lb]
-lb01
